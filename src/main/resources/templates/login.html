@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login Page</title>
+<style type="text/css">
+/* Global Styles */
+body {
+	font-family: Arial, sans-serif;
+	/* Sets the font family for the entire document */
+	background-color: skyblue; /* Sets the background color of the page */
+	margin: 0; /* Removes default margin */
+	padding: 0; /* Removes default padding */
+}
+
+/* Form Styles */
+form {
+	max-width: 400px; /* Sets the maximum width of the form */
+	margin: 20px auto; /* Centers the form horizontally with some margin */
+	background-color: #fff; /* Sets background color of the form */
+	padding: 20px; /* Adds padding inside the form */
+	border-radius: 8px; /* Adds rounded corners to the form */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	/* Adds a shadow effect to the form */
+}
+
+label {
+	display: block;
+	/* Changes the display property to block, making each label take a line */
+	text-align: center; /* Centers the text horizontally */
+	margin-bottom: 5px; /* Adds some space between labels */
+}
+
+input[type="text"], input[type="password"] {
+	width: 100%; /* Sets the width of text inputs to 100% */
+	padding: 8px; /* Adds padding inside the input fields */
+	margin-bottom: 10px; /* Adds some space between input fields */
+	border: 1px solid #ccc; /* Adds a border around input fields */
+	border-radius: 4px; /* Adds rounded corners to input fields */
+	box-sizing: border-box;
+	/* Ensures padding and border are included in the width */
+}
+
+input[type="submit"] {
+	background-color: #007bff;
+	/* Sets background color of the submit button */
+	color: #fff; /* Sets text color of the submit button */
+	padding: 10px 20px; /* Adds padding inside the submit button */
+	border: none; /* Removes default border */
+	border-radius: 4px; /* Adds rounded corners to the submit button */
+	cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+input[type="submit"]:hover {
+	background-color: #0056b3;
+	/* Changes background color of the submit button on hover */
+}
+</style>
+</head>
+<body>
+	<form action="/login" method="post">
+		<label>Email Id : </label> <input type="text" name="email"
+			placeholder="email id" /> <br> <br> <label>Password
+			: </label> <input type="text" name="password" /> <br> <br> <input
+			type="submit" value="LOGIN" />
+	</form>
+</body>
+</html>
